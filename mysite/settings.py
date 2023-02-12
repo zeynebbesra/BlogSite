@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
-import os
-
+import os 
+SECRET_KEY = os.getenv('SECRET')
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','.amazonaws.com']
-MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+ALLOWED_HOSTS = ['zbMovies.pythonanywhere.com']
+
+
 
 # Application definition
 
